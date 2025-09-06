@@ -1,0 +1,292 @@
+{
+  "1160984144290005012": {
+    "id": "1160984144290005012",
+    "balance": 544275,
+    "level": 415,
+    "experience": 41410,
+    "dailyClaimed": true,
+    "weeklyClaimed": true,
+    "lastDaily": "2025-08-03T16:16:11.297Z",
+    "lastWeekly": "2025-07-30T07:42:56.978Z",
+    "lastHunt": null,
+    "animals": {
+      "common": {
+        "chicken": 2,
+        "hamster": 1
+      },
+      "legendary": {
+        "golden_dragon": 1
+      },
+      "rare": {
+        "rhino": 1
+      },
+      "epic": {
+        "dragon": 1,
+        "kraken": 1
+      }
+    },
+    "boosters": {},
+    "totalAnimalsFound": 7,
+    "totalGambled": 99362429,
+    "totalWon": 32315317,
+    "totalLost": 76298421,
+    "commandsUsed": 448,
+    "joinedAt": 1753861341576,
+    "inventory": [
+      {
+        "id": "17539469183025wasq",
+        "type": "Armor",
+        "name": "Obsidian Plate",
+        "bonus": {
+          "defense": 630,
+          "hp": 20
+        },
+        "obtainedAt": "2025-07-31T07:28:38.302Z"
+      },
+      {
+        "id": "1753935703238h34wf",
+        "type": "Weapon",
+        "name": "Iron Sword",
+        "bonus": {
+          "attack": 150
+        },
+        "obtainedAt": "2025-07-31T04:21:43.238Z"
+      },
+      {
+        "id": "1754245218806rv2jy",
+        "type": "Armor",
+        "name": "Leather Armor",
+        "bonus": {
+          "defense": 474
+        },
+        "obtainedAt": "2025-08-03T18:20:18.806Z"
+      },
+      {
+        "id": "1754245230211pgn9v",
+        "type": "Shoe",
+        "name": "Shadow Steps",
+        "bonus": {
+          "speed": 570,
+          "luck": 2
+        },
+        "obtainedAt": "2025-08-03T18:20:30.211Z"
+      }
+    ],
+    "equipped": {
+      "weapon": {
+        "id": "1753961329129fxi3z",
+        "type": "Weapon",
+        "name": "Iron Sword",
+        "bonus": {
+          "attack": 260
+        },
+        "obtainedAt": "2025-07-31T11:28:49.129Z"
+      },
+      "armor": {
+        "id": "1754066078942rq3ak",
+        "type": "Armor",
+        "name": "Dragon Scale",
+        "bonus": {
+          "defense": 768,
+          "attack": 3
+        },
+        "obtainedAt": "2025-08-01T16:34:38.942Z"
+      }
+    }
+  },
+  "764691513242025995": {
+    "id": "764691513242025995",
+    "balance": 1000000,
+    "level": 1,
+    "experience": 0,
+    "dailyClaimed": false,
+    "weeklyClaimed": false,
+    "lastDaily": null,
+    "lastWeekly": null,
+    "lastHunt": null,
+    "animals": {},
+    "boosters": {},
+    "totalAnimalsFound": 0,
+    "totalGambled": 0,
+    "totalWon": 0,
+    "totalLost": 0,
+    "commandsUsed": 4,
+    "joinedAt": 1753862019188
+  },
+  "1248121586033365055": {
+    "id": "1248121586033365055",
+    "balance": 431608,
+    "level": 4,
+    "experience": 320,
+    "dailyClaimed": true,
+    "weeklyClaimed": true,
+    "lastDaily": "2025-08-03T07:15:06.266Z",
+    "lastWeekly": "2025-07-30T15:07:05.210Z",
+    "lastHunt": null,
+    "animals": {
+      "legendary": {
+        "golden_dragon": 2
+      }
+    },
+    "boosters": {},
+    "totalAnimalsFound": 2,
+    "totalGambled": 4584674,
+    "totalWon": 1604245,
+    "totalLost": 2730429,
+    "commandsUsed": 36,
+    "joinedAt": 1753876549156
+  },
+  "387812028913418240": {
+    "id": "387812028913418240",
+    "balance": 8755365,
+    "level": 420,
+    "experience": 41940,
+    "dailyClaimed": true,
+    "weeklyClaimed": true,
+    "lastDaily": "2025-07-30T12:25:15.453Z",
+    "lastWeekly": "2025-07-30T12:25:18.698Z",
+    "lastHunt": null,
+    "animals": {
+      "uncommon": {
+        "bear": 1
+      }
+    },
+    "boosters": {},
+    "totalAnimalsFound": 1,
+    "totalGambled": 3026265,
+    "totalWon": 754002,
+    "totalLost": 2022260,
+    "commandsUsed": 34,
+    "joinedAt": 1753878267883
+  },
+  "765914557826727957": {
+    "id": "765914557826727957",
+    "balance": 1000000000000,
+    "level": 20,
+    "experience": 1995,
+    "dailyClaimed": true,
+    "weeklyClaimed": true,
+    "lastDaily": "2025-08-01T16:25:56.125Z",
+    "lastWeekly": "2025-08-01T16:26:04.699Z",
+    "lastHunt": null,
+    "animals": {
+      "legendary": {
+        "storm_eagle": 1
+      }
+    },
+    "boosters": {},
+    "inventory": [],
+    "equipped": {},
+    "totalAnimalsFound": 1,
+    "totalGambled": 506953447332,
+    "totalWon": 1025062183193,
+    "totalLost": 24979880980,
+    "commandsUsed": 68,
+    "joinedAt": 1754065556125
+  },
+  "1392493566147694684": {
+    "id": "1392493566147694684",
+    "balance": 20191100,
+    "level": 3,
+    "experience": 280,
+    "dailyClaimed": true,
+    "weeklyClaimed": true,
+    "lastDaily": "2025-08-03T07:40:31.082Z",
+    "lastWeekly": "2025-08-03T07:40:38.646Z",
+    "lastHunt": null,
+    "animals": {},
+    "boosters": {},
+    "inventory": [],
+    "equipped": {},
+    "totalAnimalsFound": 0,
+    "totalGambled": 2074667,
+    "totalWon": 885081,
+    "totalLost": 1506162,
+    "commandsUsed": 32,
+    "joinedAt": 1754065814710
+  },
+  "1192524357197643868": {
+    "id": "1192524357197643868",
+    "balance": 0,
+    "level": 2,
+    "experience": 125,
+    "dailyClaimed": true,
+    "weeklyClaimed": true,
+    "lastDaily": "2025-08-03T07:41:01.216Z",
+    "lastWeekly": "2025-08-03T07:42:05.315Z",
+    "lastHunt": null,
+    "animals": {},
+    "boosters": {},
+    "inventory": [],
+    "equipped": {},
+    "totalAnimalsFound": 0,
+    "totalGambled": 38116,
+    "totalWon": 0,
+    "totalLost": 19608,
+    "commandsUsed": 5,
+    "joinedAt": 1754107954060
+  },
+  "282505086339514368": {
+    "id": "282505086339514368",
+    "balance": 0,
+    "level": 1,
+    "experience": 15,
+    "dailyClaimed": false,
+    "weeklyClaimed": false,
+    "lastDaily": null,
+    "lastWeekly": null,
+    "lastHunt": null,
+    "animals": {},
+    "boosters": {},
+    "inventory": [],
+    "equipped": {},
+    "totalAnimalsFound": 0,
+    "totalGambled": 1917,
+    "totalWon": 0,
+    "totalLost": 1917,
+    "commandsUsed": 1,
+    "joinedAt": 1754153070237
+  },
+  "541855392926400534": {
+    "id": "541855392926400534",
+    "balance": 1750000,
+    "level": 3,
+    "experience": 275,
+    "dailyClaimed": false,
+    "weeklyClaimed": false,
+    "lastDaily": null,
+    "lastWeekly": null,
+    "lastHunt": null,
+    "animals": {},
+    "boosters": {},
+    "inventory": [],
+    "equipped": {},
+    "totalAnimalsFound": 0,
+    "totalGambled": 18344999,
+    "totalWon": 6447000,
+    "totalLost": 6456999,
+    "commandsUsed": 15,
+    "joinedAt": 1754206987196
+  },
+  "1379396941812727932": {
+    "id": "1379396941812727932",
+    "balance": 50001000,
+    "level": 1,
+    "experience": 0,
+    "dailyClaimed": false,
+    "weeklyClaimed": false,
+    "lastDaily": null,
+    "lastWeekly": null,
+    "lastHunt": null,
+    "animals": {},
+    "boosters": {},
+    "inventory": [],
+    "equipped": {},
+    "totalAnimalsFound": 0,
+    "totalGambled": 0,
+    "totalWon": 0,
+    "totalLost": 0,
+    "commandsUsed": 0,
+    "joinedAt": 1754239431287
+  }
+}

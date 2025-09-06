@@ -1,0 +1,59 @@
+{
+  "common": {
+    "cat": { "name": "Cat", "emoji": "🐱", "value": 50 },
+    "dog": { "name": "Dog", "emoji": "🐶", "value": 60 },
+    "mouse": { "name": "Mouse", "emoji": "🐭", "value": 40 },
+    "rabbit": { "name": "Rabbit", "emoji": "🐰", "value": 55 },
+    "hamster": { "name": "Hamster", "emoji": "🐹", "value": 45 },
+    "bird": { "name": "Bird", "emoji": "🐦", "value": 50 },
+    "chicken": { "name": "Chicken", "emoji": "🐔", "value": 35 },
+    "duck": { "name": "Duck", "emoji": "🦆", "value": 40 }
+  },
+  "uncommon": {
+    "fox": { "name": "Fox", "emoji": "🦊", "value": 200 },
+    "wolf": { "name": "Wolf", "emoji": "🐺", "value": 250 },
+    "bear": { "name": "Bear", "emoji": "🐻", "value": 300 },
+    "panda": { "name": "Panda", "emoji": "🐼", "value": 280 },
+    "koala": { "name": "Koala", "emoji": "🐨", "value": 220 },
+    "pig": { "name": "Pig", "emoji": "🐷", "value": 180 },
+    "cow": { "name": "Cow", "emoji": "🐮", "value": 200 },
+    "frog": { "name": "Frog", "emoji": "🐸", "value": 150 }
+  },
+  "rare": {
+    "lion": { "name": "Lion", "emoji": "🦁", "value": 800 },
+    "tiger": { "name": "Tiger", "emoji": "🐅", "value": 850 },
+    "leopard": { "name": "Leopard", "emoji": "🐆", "value": 750 },
+    "elephant": { "name": "Elephant", "emoji": "🐘", "value": 900 },
+    "giraffe": { "name": "Giraffe", "emoji": "🦒", "value": 700 },
+    "zebra": { "name": "Zebra", "emoji": "🦓", "value": 650 },
+    "rhino": { "name": "Rhino", "emoji": "🦏", "value": 800 },
+    "hippo": { "name": "Hippo", "emoji": "🦛", "value": 750 }
+  },
+  "epic": {
+    "dragon": { "name": "Dragon", "emoji": "🐉", "value": 3000 },
+    "unicorn": { "name": "Unicorn", "emoji": "🦄", "value": 2800 },
+    "phoenix": { "name": "Phoenix", "emoji": "🔥", "value": 3200 },
+    "griffin": { "name": "Griffin", "emoji": "🦅", "value": 2900 },
+    "pegasus": { "name": "Pegasus", "emoji": "🐴", "value": 2700 },
+    "kraken": { "name": "Kraken", "emoji": "🐙", "value": 3100 }
+  },
+  "legendary": {
+    "golden_dragon": { "name": "Golden Dragon", "emoji": "🌟", "value": 10000 },
+    "ice_phoenix": { "name": "Ice Phoenix", "emoji": "❄️", "value": 9500 },
+    "shadow_wolf": { "name": "Shadow Wolf", "emoji": "🌑", "value": 8800 },
+    "crystal_unicorn": { "name": "Crystal Unicorn", "emoji": "💎", "value": 9200 },
+    "storm_eagle": { "name": "Storm Eagle", "emoji": "⚡", "value": 8500 }
+  },
+  "mythical": {
+    "cosmic_dragon": { "name": "Cosmic Dragon", "emoji": "🌌", "value": 25000 },
+    "void_phoenix": { "name": "Void Phoenix", "emoji": "🕳️", "value": 24000 },
+    "celestial_tiger": { "name": "Celestial Tiger", "emoji": "✨", "value": 23000 },
+    "divine_wolf": { "name": "Divine Wolf", "emoji": "👑", "value": 22000 }
+  },
+  "priceless": {
+    "ancient_guardian": { "name": "Ancient Guardian", "emoji": "🗿", "value": 75000 },
+    "time_keeper": { "name": "Time Keeper", "emoji": "⏰", "value": 80000 },
+    "xiong_ti": { "name": "shushu", "emoji": "?", "value": 90000 },
+    "reality_bender": { "name": "Reality Bender", "emoji": "🌀", "value": 85000 }
+  }
+}
