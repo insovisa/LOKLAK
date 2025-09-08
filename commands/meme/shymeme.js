@@ -71,7 +71,7 @@ module.exports = {
         message.reply({ embeds: [loadingEmbed] }).then(async (sentMessage) => {
             try {
                 // Define the path to your images/gifs folder
-                const imagesPath = path.join(__dirname, '../assets'); // Added /shy subfolder
+                const imagesPath = path.join(__dirname, '../../assets'); // Added /shy subfolder
                 
                 // Function to get random image/gif from folder
                 function getRandomImage() {
