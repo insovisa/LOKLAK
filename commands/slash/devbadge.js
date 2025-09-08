@@ -1,5 +1,5 @@
 const { SlashCommandBuilder } = require('discord.js');
-const { isAdmin } = require('../utils/adminCheck'); // Make sure this path is correct
+const { isAdmin } = require('../../utils/adminCheck'); // FIXED PATH: changed from ../ to ../../
 
 module.exports = {
     data: new SlashCommandBuilder()
