@@ -5,6 +5,16 @@ const database = require("../../utils/database.js");
 const fs = require('fs');
 const path = require('path');
 
+// Add your shy messages array (make sure this exists)
+const shyMessages = [
+    "😳 *blushes*",
+    "💕 Aww so shy~",
+    "👀 *hides face*",
+    "🌸 So kawaii!",
+    "✨ *sparkles shyly*"
+    // Add more messages as needed
+];
+
 module.exports = {
     name: "shymeme",
     aliases: ["ksm"],
@@ -19,8 +29,7 @@ module.exports = {
                     {
                         color: colors.error,
                         title: "🔥 shy Command",
-                        description:
-                            "Please mention someone to beksloy!\n**Usage:** `Kbeksloy @user [message]` or `kkk @user [message]`\n**Example:** `kkk @friend You're so beksloy!`",
+                        description: "Please mention someone to beksloy!\n**Usage:** `Kbeksloy @user [message]` or `kkk @user [message]`\n**Example:** `kkk @friend You're so beksloy!`",
                         timestamp: new Date(),
                     },
                 ],
@@ -58,22 +67,20 @@ module.exports = {
             });
         }
 
-        // Show loading embed first
-        const loadingEmbed = new EmbedBuilder()
-            .setColor(colors.primary)
-            .setDescription("Loading beksloy meme... 🔥");
-            
+        // Show loading embed first            
         message.reply({ embeds: [loadingEmbed] }).then(async (sentMessage) => {
             try {
                 // Define the path to your images/gifs folder
-                const imagesPath = path.join(__dirname, '../../assets');
+                const imagesPath = path.join(__dirname, '../assets'); // Added /shy subfolder
                 
                 // Function to get random image/gif from folder
                 function getRandomImage() {
                     try {
                         // Check if directory exists
                         if (!fs.existsSync(imagesPath)) {
-                            throw new Error(`Directory does not exist: ${imagesPath}`);
+                            // Create the directory if it doesn't exist
+                            fs.mkdirSync(imagesPath, { recursive: true });
+                            throw new Error(`Created directory: ${imagesPath}. Please add some images!`);
                         }
 
                         // Read all files from the directory
@@ -82,11 +89,11 @@ module.exports = {
                         // Filter for image/gif files (including webp)
                         const imageFiles = files.filter(file => {
                             const ext = path.extname(file).toLowerCase();
-                            return ['.png', '.jpg', '.jpeg', '.gif', '.webp'].includes(ext);
+                            return ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.bmp'].includes(ext);
                         });
                         
                         if (imageFiles.length === 0) {
-                            throw new Error('No image files found in directory');
+                            throw new Error('No image files found in assets/shy folder. Please add some images!');
                         }
                         
                         // Get random image
@@ -106,7 +113,7 @@ module.exports = {
                 const imageInfo = getRandomImage();
                 
                 if (!imageInfo) {
-                    throw new Error('No image available or directory not found');
+                    throw new Error('No images available in assets/shy folder');
                 }
 
                 // Create attachment from local file
@@ -114,17 +121,15 @@ module.exports = {
                     name: `shy.${imageInfo.extension}`
                 });
 
-
                 const randomMessage = shyMessages[Math.floor(Math.random() * shyMessages.length)];
 
                 // Create the final embed
                 const shyEmbed = new EmbedBuilder()
                     .setColor(colors.warning)
+                    .setTitle(`😳 ${message.author.username} is being shy to ${target.username}!`)
                     .setDescription(
-                        randomMessage +
-                            (customMessage
-                                ? `\n\n💭 *"${customMessage}"*`
-                                : "")
+                        `${randomMessage}` +
+                        (customMessage ? `\n\n💭 *"${customMessage}"*` : "")
                     )
                     .setImage(`attachment://shy.${imageInfo.extension}`)
                     .setFooter({ 
@@ -147,8 +152,8 @@ module.exports = {
                     .setColor(colors.error)
                     .setDescription(
                         "Sorry, I couldn't load the shy image! 😢\n" +
-                        "Make sure you have images in the `assets/shy/` folder.\n\n" +
-                        `Error: ${error.message}`
+                        `**Error:** ${error.message}\n\n` +
+                        "Please make sure you have images in the `assets/shy/` folder with extensions: .png, .jpg, .jpeg, .gif, .webp"
                     );
 
                 await sentMessage.edit({ embeds: [fallbackEmbed] });
