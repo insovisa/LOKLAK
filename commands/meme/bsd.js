@@ -31,9 +31,14 @@ module.exports = {
             const randomFile = files[Math.floor(Math.random() * files.length)];
             const filePath = path.join(memesPath, randomFile);
             
-               
-            // Send WEBM as regular file attachment (NOT in embed) so it plays as video
+            // Send the image with embed
+            const { EmbedBuilder } = require('discord.js');
+            
+            const embed = new EmbedBuilder()
+                .setImage(`attachment://${randomFile}`);
+            
             await message.channel.send({
+                embeds: [embed],
                 files: [{
                     attachment: filePath,
                     name: randomFile
