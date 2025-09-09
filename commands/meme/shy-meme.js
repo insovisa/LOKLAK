@@ -9,7 +9,7 @@ module.exports = {
     async execute(message, args) {
         try {
             // Path to your memes folder (adjust this path as needed)
-            const memesPath = path.join(__dirname, '../../assets/shy-memes');
+            const memesPath = path.join(__dirname, '../../assets/shy-meme');
             
             // Check if the memes folder exists
             if (!fs.existsSync(memesPath)) {
