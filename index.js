@@ -195,6 +195,33 @@ client.on('interactionCreate', async interaction => {
   }
 });
 
+// Message command handler (NEW - for k commands like kkj, kpunch, etc.)
+client.on('messageCreate', async message => {
+    // Ignore bots and messages without content
+    if (message.author.bot || !message.content) return;
+    
+    // No prefix needed - commands start directly with 'k' or 'K'
+    const content = message.content.trim();
+    
+    // Check if message starts with 'k' or 'K'
+    if (!content.toLowerCase().startsWith('k')) return;
+    
+    // Parse command and arguments
+    const args = content.split(/ +/);
+    const commandName = args.shift().toLowerCase();
+    
+    // Get command from collection
+    const command = client.commands.get(commandName);
+    if (!command) return;
+    
+    try {
+        await command.execute(message, args);
+    } catch (error) {
+        console.error(`Error executing ${commandName}:`, error);
+        message.reply('❌ There was an error executing that command!');
+    }
+});
+
 // Login
 const token = process.env.DISCORD_TOKEN;
 if (!token) {
