@@ -2,14 +2,14 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = {
-    name: 'ksm',
-    aliases: ['shy', 'shymeme'],
-    description: 'Sends a random shy meme',
+    name: 'kbd',
+    aliases: ['bsd', 'beksloydance'],
+    description: 'Sends a random bekslo dance meme',
     
     async execute(message, args) {
         try {
             // Path to your memes folder (adjust this path as needed)
-            const memesPath = path.join(__dirname, '../../assets/shy-meme');
+            const memesPath = path.join(__dirname, '../../assets/bsd');
             
             // Check if the memes folder exists
             if (!fs.existsSync(memesPath)) {
@@ -47,7 +47,7 @@ module.exports = {
             });
             
         } catch (error) {
-            console.error('Error in shy meme command:', error);
+            console.error('Error in beksloy dance meme command:', error);
             message.reply('❌ Failed to send meme!');
         }
     }
