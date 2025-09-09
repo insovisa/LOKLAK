@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
     name: 'kbd',
     aliases: ['bsd', 'beksloydance'],
-    description: 'Sends a random bekslo dance meme',
+    description: 'Sends a random beksloy dance meme',
     
     async execute(message, args) {
         try {
