@@ -1,53 +1,46 @@
-const fs = require('fs');
-const path = require('path');
+const { EmbedBuilder } = require('discord.js');
 
 module.exports = {
     name: 'kbd',
     aliases: ['bsd', 'beksloydance'],
-    description: 'Sends a random beksloy dance meme',
+    description: 'Sends a random beksloy dance GIF from a predefined list',
     
     async execute(message, args) {
         try {
-            // Path to your memes folder (adjust this path as needed)
-            const memesPath = path.join(__dirname, '../../assets/bsd');
-            
-            // Check if the memes folder exists
-            if (!fs.existsSync(memesPath)) {
-                return message.reply('❌ Memes folder not found! Please create the folder: `assets/shy-memes`');
+            // Predefined list of #beksloydance GIF URLs
+            const gifUrls = [
+                'https://media.giphy.com/media/ZyaTZLqOE7X3SPLIQa/giphy.gif',
+                'https://media.giphy.com/media/Ap5ztbZZvCK9BawPX4/giphy.gif',
+                'https://media.giphy.com/media/qXcQSZJ6Ljm3dAcE4r/giphy.gif',
+                'https://media.giphy.com/media/3OUIG1MrsMw2N9tlNU/giphy.gif',
+                'https://media.giphy.com/media/bEgKvOtbIvbRXZ4VOf/giphy.gif',
+                'https://media.giphy.com/media/P0pEeYEri43VdV6ScQ/giphy.gif',
+                'https://media.giphy.com/media/UQyt1lpILxQYoheUA3/giphy.gif',
+                'https://media.giphy.com/media/agWKYHXSq5HzaTNVbZ/giphy.gif',
+                'https://media.giphy.com/media/Got8dlINbPe6J4LXu4/giphy.gif',
+                'https://media.giphy.com/media/sTAVDENIYpx3iAGONw/giphy.gif',
+                'https://media.giphy.com/media/kvQd7wbPJogB6h6OlO/giphy.gif'
+            ];
+
+            // Check if the list is not empty
+            if (gifUrls.length === 0) {
+                return message.reply('❌ No GIFs available!');
             }
-            
-            // Get all image files from the folder
-            const files = fs.readdirSync(memesPath).filter(file => {
-                const ext = path.extname(file).toLowerCase();
-                return ['.png', '.jpg', '.jpeg', '.gif', '.webp', '.webm'].includes(ext);
-            });
-            
-            // Check if there are any image files
-            if (files.length === 0) {
-                return message.reply('❌ No memes found in the folder!');
-            }
-            
-            // Select a random file
-            const randomFile = files[Math.floor(Math.random() * files.length)];
-            const filePath = path.join(memesPath, randomFile);
-            
-            // Send the image with embed
-            const { EmbedBuilder } = require('discord.js');
-            
+
+            // Select a random GIF URL
+            const randomGifUrl = gifUrls[Math.floor(Math.random() * gifUrls.length)];
+
+            // Create embed with the GIF
             const embed = new EmbedBuilder()
-                .setImage(`attachment://${randomFile}`);
-            
-            await message.channel.send({
-                embeds: [embed],
-                files: [{
-                    attachment: filePath,
-                    name: randomFile
-                }]
-            });
-            
+                .setImage(randomGifUrl)
+                .setFooter({ text: 'Powered by Giphy' });
+
+            // Send the embed
+            await message.channel.send({ embeds: [embed] });
+
         } catch (error) {
-            console.error('Error in beksloy dance meme command:', error);
-            message.reply('❌ Failed to send meme!');
+            console.error('Error in beksloy dance GIF command:', error);
+            message.reply('❌ Failed to send GIF!');
         }
     }
 };
